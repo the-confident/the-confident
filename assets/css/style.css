@@ -513,6 +513,12 @@ a:hover {
   display: block;
 }
 
+.quote-list .quote + .quote:last-of-type {
+  border-block-end: 2px dashed var(--color-primary);
+  padding-block-end: calc(var(--spacing-largest) * 2);
+  margin-block-end: calc(var(--spacing-largest) * 2);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
