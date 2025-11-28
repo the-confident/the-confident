@@ -84,6 +84,37 @@
   </header>
 
   <main id="main">
+    <div id="sale" class="slice slice--secondary">
+      <div class="container container--padding-inline">
+        <div class="slice__inner">
+          <h2>Flash Sale</h2>
+          <p>It's Black Friday and Cyber Monday</p>
+          <p>To celebrate, we are giving a MASSIVE 50% pre-order discount on the course, until December 5th.</p>
+          <p>To put that in to context:</p>
+          <ul>
+            <li>Usual Price (euro): €599</li>
+            <li>Flash Sale Price (euro): €299.50</li>
+            <li>Usual Price (GBP): £499</li>
+            <li>Flash Sale Price (GBP): £249.50</li>
+          </ul>
+
+          <p>Click below to purchase the course and use the code <strong>BF2025</strong>:</p>
+
+          <script async
+            src="https://js.stripe.com/v3/buy-button.js">
+          </script>
+
+          <stripe-buy-button
+            buy-button-id="buy_btn_1SYQCqA2vwbAHyAt3MD2OZSt"
+            publishable-key="pk_live_51PsQ2vA2vwbAHyAtabJ9xvFcwThCPTthnca67hbBehXhtmCdmewQhXjrubhsXKUJ6kLmbHVRKLTcZ8TVxQxB807C00f6qlubnZ"
+          >
+          </stripe-buy-button>
+
+          <p>Note: The plan is to launch the course in early 2026.</p>
+
+        </div>
+      </div>
+    </div>
     <div class="slice">
       <div class="container container--padding-inline">
         <div class="slice__inner">
@@ -107,7 +138,7 @@
       </div>
     </div>
 
-    <div class="slice slice--dark">
+    <div class="slice slice--primary">
       <div class="container container--padding-inline">
         <div class="slice__inner">
 
@@ -224,7 +255,7 @@
       </div>
     </div>
 
-    <div class="slice slice--dark" id="contact">
+    <div class="slice slice--primary" id="contact">
       <div class="container container--padding-inline">
         <div class="slice__inner">
           <p>email: <a href="mailto:info@the-confident.com">info@the-confident.com</a></p>

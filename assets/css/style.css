@@ -428,9 +428,17 @@ a:hover {
   color: var(--color-primary);
 }
 
-.slice--dark {
-  background-color: var(--color-primary);
+.slice--primary,
+.slice--secondary {
   color: var(--color-white);
+}
+
+.slice--primary {
+  background-color: var(--color-primary);
+}
+
+.slice--secondary {
+  background-color: var(--color-secondary);
 }
 
 .slice__inner {
@@ -455,7 +463,8 @@ a:hover {
   color: var(--color-secondary);
 }
 
-.slice--dark a {
+.slice--primary a,
+.slice--secondary a {
   color: var(--color-white);
 }
 
@@ -465,7 +474,8 @@ a:hover {
   border-color: var(--color-secondary);
 }
 
-.slice--dark hr {
+.slice--primary hr,
+.slice--secondary hr {
   border-color: var(--color-white);
 }
 
