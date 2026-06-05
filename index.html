@@ -52,7 +52,7 @@
           </a>
         </div>
 
-        <nav class="header__nav">
+        <nav class="header__nav visible-on-large">
           <ul>
             <li>
               <a class="active" href="/#services">Services</a>
@@ -78,11 +78,31 @@
         </div>
 
       </div>
+        <nav class="header__nav visible-on-small">
+          <ul>
+            <li>
+              <a class="active" href="/#services">Services</a>
+            </li>
+            <li>
+              <a href="/#work">Work</a>
+            </li>
+            <li>
+              <a href="/#build-to-share">Build to Share</a>
+            <li>
+              <a href="/#about">About</a>
+            </li>
+            <li>
+              <a href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
     </div>
   </header>
 
   <main id="main">
 
+    <!-- Post Header -->
     <section class="post-header container container--padding-inline">
       <div class="post-header__content">
         <ul>
@@ -94,17 +114,21 @@
       </div>
     </section>
 
+    <!-- Hero -->
     <section class="hero container container--padding-inline">
       <h1>Built by the<br>people who build<br><em>LocalGov Drupal</em><span class="accent">.</span></h1>
     </section>
+
+    <!-- Post Hero -->
     <section class="post-hero container container--padding-inline">
       <div class="post-hero__content">
         <div class="post-hero__content-first">
           <p> The Confident is led by <strong>Mark Conroy</strong> — Frontend Lead of <em>LocalGov Drupal</em>, and the
             author of the theme system, the multilingual system, and many other popular LGD features.</p>
           <p>Our code is in use by 60+ councils across the UK and Ireland. When you work with us,
-            you're working with the person who shapes the platform itself. </p>
+            you're working with the people who shape the platform itself. </p>
         </div>
+
         <div class="post-hero__content-second">
           <ul>
             <li>
@@ -113,7 +137,7 @@
               </a>
             </li>
             <li>
-              <a class="button button--underline" href="/#contact">See how councils work with us
+              <a class="button button--underline" href="/#services">See how councils work with us
                 <span class="button__icon">→</span>
               </a>
             </li>
@@ -122,6 +146,7 @@
       </div>
     </section>
 
+    <!-- Ticker -->
     <section class="ticker" aria-hidden="true">
       <div class="ticker-track" id="ticker-track">
         <span>LocalGov Drupal</span>
@@ -181,11 +206,16 @@
       </div>
     </section>
 
+    <!-- Stats -->
     <section class="container container--padding-inline">
       <section class="stats">
         <div class="stats__stat">
           <div class="stats__number">60<em>+</em></div>
           <div class="stats__label">Council websites running code we wrote</div>
+        </div>
+        <div class="stats__stat">
+          <div class="stats__number">50<em>+</em></div>
+          <div class="stats__label">LocalGov Drupal modules maintained</div>
         </div>
         <div class="stats__stat">
           <div class="stats__number"><em>01</em></div>
@@ -195,13 +225,10 @@
           <div class="stats__number">DOS<em>7</em></div>
           <div class="stats__label">Listed on the UK Digital Outcomes framework</div>
         </div>
-        <div class="stats__stat">
-          <div class="stats__number">£2.5<em>k</em></div>
-          <div class="stats__label">All-inclusive monthly retainer. No hour-counting.</div>
-        </div>
       </section>
     </section>
 
+    <!-- Services -->
     <section id="services" data-screen-label="Services">
       <div class="container container--padding-inline">
         <div class="section-head">
@@ -227,8 +254,8 @@
               <h3>LGD health check</h3>
               <p>Not sure what your LGD site needs? We review your codebase, theme, accessibility, and content structure
                 — and give you a prioritised report of what to fix and what to build next.</p>
-              <span class="card__meta">Fixed price · Direct award · No procurement required</span>
-              <a class="button" href="#">Find out more <span class="button__icon">→</span></a>
+              <p class="card__meta">Fixed price · Direct award · No procurement required</p>
+              <a class="button" href="#contact">Contact us for more <span class="button__icon">→</span></a>
             </article>
 
             <article class="card">
@@ -236,8 +263,8 @@
               <h3>Site design &amp; build</h3>
               <p>We design and build LocalGov Drupal websites for councils — from discovery through to launch. Currently
                 working with Colchester City Council.</p>
-              <span class="card__meta">Available on DOS7 for compliant procurement</span>
-              <a class="button" href="#">Talk to us about your project <span class="button__icon">→</span></a>
+              <p class="card__meta">Available on DOS7 for compliant procurement</p>
+              <a class="button" href="#contact">Talk to us about your project <span class="button__icon">→</span></a>
             </article>
 
             <article class="card">
@@ -245,19 +272,16 @@
               <h3>Ongoing retainer</h3>
               <p>One fixed monthly fee. No hour-counting, no "that's out of scope", no routine maintenance eating your
                 budget. Fast, expert support from the people who know LGD better than anyone.</p>
-              <span class="card__meta">£2,500/month · All-inclusive</span>
-              <div>
-                <a href="#" class="button">See how our retainer works <span class="button__icon">→</span></a>
-              </div>
+              <p class="card__meta">Our most effective service for long-term capability.</p>
+              <a href="/retainer/" class="button">Let's chat<span class="button__icon">→</span></a>
             </article>
 
-            <article class="testimonial-card testimonial-card--accent">
+            <article class="testimonial-card testimonial-card--accent testimonial-card--featured">
               <blockquote>
-                <p class="testimonial-card__quote">Amazing work. If you need a design system re-architected, go talk to
-                  The Confident.</p>
-                <cite class="testimonial-card__author"><span class="accent">—</span><br>Alex Sturtivant <br><span>Royal
-                    Borough of Greenwich</span></cite>
+                <p class="testimonial-card__quote">Huge thanks for turning a chaotic week into real progress. Your quick response to the security release and the way you handled the cyber attack were outstanding. Really impressive work.</p>
+                <cite class="testimonial-card__author"><span class="accent">—</span><br>Anushiya Sivanraj<br><span>Colchester City Council</span></cite>
               </blockquote>
+            </article>
 
           </div>
         </div>
@@ -272,11 +296,10 @@
               <span class="index"><span class="accent">04</span> / TRAINING</span>
               <h3>LGD training</h3>
               <p>We train council digital teams to understand and work confidently with LocalGov Drupal — from content
-                editors to in-house developers. Hands-on, practical, and taught by the person who built the platform.
+                editors to in-house developers. Hands-on, practical, and taught by the frontend lead for the platform.
               </p>
-              <span class="card__meta">Online course launching April 2026</span>
               <div>
-                <a href="#" class="button">See our training options <span class="button__icon">→</span></a>
+                <a href="#contact" class="button">Contact us to get started<span class="button__icon">→</span></a>
               </div>
             </article>
 
@@ -286,9 +309,9 @@
               <p>We work inside your team one or two days a week over several months — building your processes,
                 workflows, and LGD knowledge from the inside. The goal is a team that doesn't need to keep coming back
                 to us.</p>
-              <span class="card__meta">Our most effective service for long-term capability</span>
+                <p class="card__meta">Our most effective service for long-term capability.</p>
               <div>
-                <a href="#" class="button">How embedding works <span class="button__icon">→</span></a>
+                <a href="#contact" class="button">Find out more<span class="button__icon">→</span></a>
               </div>
             </article>
 
@@ -305,14 +328,14 @@
               <h3>Fund a feature — and give it to every council for free.</h3>
               <p>Have a problem every council shares? Fund the open-source solution. Your
                 council gets exactly what it needs. Every other council gets it too, at no cost to them.</p>
-              <span class="card__meta">Aligns with MHCLG's Local Digital Declaration &amp; Ireland's Build to Share
-                initiative</span>
+              <p class="card__meta">Aligns with MHCLG's Local Digital Declaration &amp; Ireland's Build to Share
+                initiative</p>
               <div>
-                <a href="#" class="button">Learn about Fund a feature <span class="button__icon">→</span></a>
+                <a href="#contact" class="button">Let's chat about your idea<span class="button__icon">→</span></a>
               </div>
             </article>
 
-            <article class="testimonial-card testimonial-card--accent">
+            <article class="testimonial-card testimonial-card--accent testimonial-card--featured">
               <blockquote>
                 <p class="testimonial-card__quote">If you are looking for someone with a huge knowledge of Drupal and
                   LocalGov Drupal, look no further.</p>
@@ -327,6 +350,7 @@
       </div>
     </section>
 
+    <!-- Work -->
     <section id="work" data-screen-label="Work">
       <div class="container container--padding-inline">
         <div class="section-head">
@@ -351,7 +375,6 @@
               <p>Cumberland funded an open-source feature that connects council websites directly to the national Bus
                 Open
                 Data Service. The feature is now free for every UK council to use — forever.</p>
-              <div><a class="button" href="#">Read the story <span class="button__icon">→</span></a>
             </article>
 
             <article class="card">
@@ -360,7 +383,6 @@
               <div class="card__meta">Tipperary County Council</div>
               <p>Rather than paying annual licence fees to a proprietary platform, Tipperary funded an open-source
                 consultations tool. Released on Drupal.org, available to any council worldwide at no cost.</p>
-              <div><a class="button" href="#">Read the story <span class="button__icon">→</span></a>
             </article>
 
             <article class="card">
@@ -369,10 +391,9 @@
               <div class="card__meta">Royal Borough of Greenwich</div>
               <p>A complete rebuild of Greenwich's design system to LocalGov Drupal standards — accessible, consistent,
                 and built to scale across the borough's full digital estate.</p>
-              <div><a class="button" href="#">Read the story <span class="button__icon">→</span></a>
             </article>
 
-            <article class="testimonial-card testimonial-card--accent">
+            <article class="testimonial-card testimonial-card--accent testimonial-card--featured">
               <blockquote>
                 <p class="testimonial-card__quote">Your work is exceptional and your contribution to LocalGov Drupal has
                   been immense.</p>
@@ -411,10 +432,10 @@
               </div>
               <p class="meta">Aligns with MHCLG's Local Digital Declaration and the Irish Government's Build to Share
                 initiative.</p>
-              <a href="#" class="button">See how Fund a feature works <span class="button__icon">→</span></a>
+              <a href="#contact" class="button">Let's discuss it<span class="button__icon">→</span></a>
             </article>
             <div>
-              <article class="testimonial-card testimonial-card--accent">
+              <article class="testimonial-card testimonial-card--accent testimonial-card--featured">
                 <blockquote>
                   <p class="testimonial-card__quote">You have done an amazing job. We obviously knew that we had the
                     perfect partner onboard and this reaffirms our thinking.</p>
@@ -449,7 +470,7 @@
                 you — and point you in the direction of someone who can. We'd rather turn down work than do it badly.
               </p>
             </article>
-            <article class="testimonial-card testimonial-card--accent">
+            <article class="testimonial-card testimonial-card--accent testimonial-card--featured">
               <blockquote>
                 <p class="testimonial-card__quote">You've done an amazing job this week (and every week). Thanks Mark!
                 </p>
@@ -466,8 +487,8 @@
     <section class="testimonials" data-screen-label="Testimonials">
       <div class="container container--padding-inline">
         <div class="section-head">
-          <div class="index">§05 · What councils say</div>
-          <h2>Trusted by councils across the<br><em>UK & Ireland.</em></h2>
+          <div class="index">§05 · What councils in the UK and Ireland say about us</div>
+          <h2>Trusted by the people you trust</h2>
         </div>
       </div>
 
@@ -497,6 +518,13 @@
                 The Confident.</p>
               <cite class="testimonial-card__author"><span class="accent">—</span><br>Alex Sturtivant <br><span>Royal
                   Borough of Greenwich</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">Huge thanks for turning a chaotic week into real progress. Your quick response to the security release and the way you handled the cyber attack were outstanding. Really impressive work.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Anushiya Sivanraj<br><span>Colchester City Council</span></cite>
             </blockquote>
           </article>
 
@@ -659,7 +687,74 @@
       <div class="testimonial-rail reversed">
         <div class="track" id="testimonial-track-2">
 
-                    <article class="testimonial-card">
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">You've done an amazing job this week (and every week). Thanks Mark!</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Will Callaghan <br><span>Product
+                  Lead, LocalGov Drupal</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">You have done an amazing job. We obviously knew that we had the perfect
+                partner onboard and this reaffirms our thinking.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>
+                Vaughan Johnson <br><span>ICT Technology Solutions Manager, Colchester City Council</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">Amazing work. If you need a design system re-architected, go talk to
+                The Confident.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Alex Sturtivant <br><span>Royal
+                  Borough of Greenwich</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">Huge thanks for turning a chaotic week into real progress. Your quick response to the security release and the way you handled the cyber attack were outstanding. Really impressive work.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Anushiya Sivanraj<br><span>Colchester City Council</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">Thanks very much for all your work, you massive LGD legend.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Nicholas Ward <br><span>Essex
+                  County Council</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">If you are looking for someone with a huge knowledge of Drupal and
+                LocalGov Drupal, look no further.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Tim O'Driscoll <br><span>Digital
+                  Lead, Tipperary County Council</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">We learned way more than we ever expected. Brilliant training.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Joe Swarbrick <br><span>Blackburn
+                  with Darwen Council</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p class="testimonial-card__quote">Your work is exceptional and your contribution to LocalGov Drupal has
+                been immense.</p>
+              <cite class="testimonial-card__author"><span class="accent">—</span><br>Colin Stenning <br><span>
+                  Digital Health Check</span></cite>
+            </blockquote>
+          </article>
+
+          <article class="testimonial-card">
             <blockquote>
               <p class="testimonial-card__quote">You've done an amazing job this week (and every week). Thanks Mark!</p>
               <cite class="testimonial-card__author"><span class="accent">—</span><br>Will Callaghan <br><span>Product
@@ -719,67 +814,7 @@
             </blockquote>
           </article>
 
-                    <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">You've done an amazing job this week (and every week). Thanks Mark!</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>Will Callaghan <br><span>Product
-                  Lead, LocalGov Drupal</span></cite>
-            </blockquote>
-          </article>
-
           <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">You have done an amazing job. We obviously knew that we had the perfect
-                partner onboard and this reaffirms our thinking.</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>
-                Vaughan Johnson <br><span>ICT Technology Solutions Manager, Colchester City Council</span></cite>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">Amazing work. If you need a design system re-architected, go talk to
-                The Confident.</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>Alex Sturtivant <br><span>Royal
-                  Borough of Greenwich</span></cite>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">Thanks very much for all your work, you massive LGD legend.</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>Nicholas Ward <br><span>Essex
-                  County Council</span></cite>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">If you are looking for someone with a huge knowledge of Drupal and
-                LocalGov Drupal, look no further.</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>Tim O'Driscoll <br><span>Digital
-                  Lead, Tipperary County Council</span></cite>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">We learned way more than we ever expected. Brilliant training.</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>Joe Swarbrick <br><span>Blackburn
-                  with Darwen Council</span></cite>
-            </blockquote>
-          </article>
-
-          <article class="testimonial-card">
-            <blockquote>
-              <p class="testimonial-card__quote">Your work is exceptional and your contribution to LocalGov Drupal has
-                been immense.</p>
-              <cite class="testimonial-card__author"><span class="accent">—</span><br>Colin Stenning <br><span>
-                  Digital Health Check</span></cite>
-            </blockquote>
-          </article>
-
-                    <article class="testimonial-card">
             <blockquote>
               <p class="testimonial-card__quote">You've done an amazing job this week (and every week). Thanks Mark!</p>
               <cite class="testimonial-card__author"><span class="accent">—</span><br>Will Callaghan <br><span>Product
@@ -863,7 +898,7 @@
               <p>We're happy to have an
                 informal conversation before you've started a procurement process. In fact, that's usually the most
                 useful time to talk.</p>
-              <div><a class="button" href="mailto:info@the-confident.com">Book a conversation <span
+              <div><a class="button button--accent" href="mailto:info@the-confident.com">Book a conversation <span
                     class="button__icon">→</span></a></div>
             </article>
 
@@ -901,28 +936,28 @@
           <div class="footer__item">
             <h2 class="h6">Services</h2>
             <ul>
-              <li><a href="#">Health check</a></li>
-              <li><a href="#">Design &amp; build</a></li>
-              <li><a href="#">Retainer</a></li>
-              <li><a href="#">Training</a></li>
-              <li><a href="#">Embedded</a></li>
-              <li><a href="#">Fund a feature</a></li>
+              <li><a href="#services">Health check</a></li>
+              <li><a href="#services">Design &amp; build</a></li>
+              <li><a href="#services">Retainer</a></li>
+              <li><a href="#services">Training</a></li>
+              <li><a href="#services">Embedded</a></li>
+              <li><a href="#services">Fund a feature</a></li>
             </ul>
           </div>
           <div class="footer__item">
             <h2 class="h6">Company</h2>
             <ul>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Build to Share</a></li>
-              <li><a href="#">About Mark</a></li>
-              <li><a href="#">Writing</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#build-to-share">Build to Share</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer__item">
             <h2 class="h6">Contact</h2>
             <ul>
               <li><a href="mailto:info@the-confident.com">info@the-confident.com</a></li>
-              <li>Dublin, Ireland</li>
+              <li>Galway, Ireland</li>
               <li>London, UK</li>
             </ul>
           </div>
