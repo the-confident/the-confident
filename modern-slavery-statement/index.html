@@ -38,43 +38,63 @@
   </div>
   <header class="header">
 
-    <div class="container container--padding">
-      <div class="header__inner">
+    <div class="container container--padding-inline">
 
-        <div class="header__content">
+      <div class="header__content">
 
-          <div class="header__content-logo">
-            <a href="/">
-              <img src="/assets/logos/svg/white-text-logo.svg" alt="The Confident - Let's do big things">
-            </a>
-          </div>
-
-          <nav class="header__nav">
-            <ul>
-              <li>
-                <a href="/what-we-do">What we do</a>
-              </li>
-              <li>
-                <a href="/retainer">Retainer Services</a>
-              </li>
-              <li>
-                <a href="/courses/build-a-localgov-drupal-website">Courses</a>
-              <li>
-              <li>
-                <a href="/#contact">Contact Us</a>
-              </li>
-            </ul>
-          </nav>
-
+        <div class="header__content-logo">
+          <a href="/">
+            <img src="/assets/logos/svg/white-text-logo.svg"
+              alt="The Confident - The leading consultants for all things Drupal, LocalGov Drupal, and design systems.">
+          </a>
         </div>
 
-        <div class="header__slogan">
-          <h1>Modern Slavery Statement and Human Trafficking Statement</h1>
+        <nav class="header__nav visible-on-large">
+          <ul>
+            <li>
+              <a class="active" href="/#services">Services</a>
+            </li>
+            <li>
+              <a href="/#work">Work</a>
+            </li>
+            <li>
+              <a href="/#build-to-share">Build to Share</a>
+            <li>
+              <a href="/#about">About</a>
+            </li>
+            <li>
+              <a href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a class="button button--ghost" href="/#contact">Talk to Us
+            <span class="button__icon">→</span>
+          </a>
         </div>
 
       </div>
-    </div>
+        <nav class="header__nav visible-on-small">
+          <ul>
+            <li>
+              <a class="active" href="/#services">Services</a>
+            </li>
+            <li>
+              <a href="/#work">Work</a>
+            </li>
+            <li>
+              <a href="/#build-to-share">Build to Share</a>
+            <li>
+              <a href="/#about">About</a>
+            </li>
+            <li>
+              <a href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
+    </div>
   </header>
 
   <main id="main">
@@ -150,28 +170,66 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container container--padding">
-      <div class="footer__inner">
-        <div class="grid grid--halves grid-center-v">
-          <div class="footer__item footer__item--logo">
+    <div class="container container--padding-inline">
+      <div class="grid grid--halves">
+        <div class="footer__item footer__item--brand">
+
+          <a href="/">
             <img src="/assets/logos/svg/white-text-logo.svg"
-              alt="The Confident Logo - let's do big things - LocalGov Drupal agency">
-          </div>
-          <div class="footer__item footer__item--blurb flow">
-            <p>The Confident Digital Ltd, trading as <span class="alt">the Confident</span> is a company registered in
-              Ireland.</p>
+              alt="The Confident - The leading consultants for all things Drupal, LocalGov Drupal, and design systems.">
+          </a>
+          <p>LocalGov Drupal for UK &amp; Irish councils.</p>
+          <p>Built by the people who build LocalGov Drupal.</p>
+        </div>
+        <div class="grid grid--thirds">
+          <div class="footer__item">
+            <h2 class="h6">Services</h2>
             <ul>
-              <li>Company number: 768007</li>
-              <li>VAT number: IE4312449CH</li>
+              <li><a href="#services">Health check</a></li>
+              <li><a href="#services">Design &amp; build</a></li>
+              <li><a href="#services">Retainer</a></li>
+              <li><a href="#services">Training</a></li>
+              <li><a href="#services">Embedded</a></li>
+              <li><a href="#services">Fund a feature</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h2 class="h6">Company</h2>
+            <ul>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#build-to-share">Build to Share</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="/modern-slavery-statement/">Modern Slavery Statement</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h2 class="h6">Contact</h2>
+            <ul>
+              <li><a href="mailto:info@the-confident.com">info@the-confident.com</a></li>
+              <li>Galway, Ireland</li>
+              <li>London, UK</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="footer__bottom">
+        <div class="grid grid--halves grid--center-h">
+          <div class="index centered">
+            <p>The Confident Digital Ltd., trading as <span class="accent">The Confident</span>.</p>
+            <p>Registered in Ireland</p>
+          </div>
+          <div class="index centered">
+            <p>Company Registration Number: 768007</p>
+            <p>VAT Number: IE4312449CH</p>
+          </div>
+        </div>
+      </div>
 
   </footer>
-
   <script src="/script.js"></script>
 </body>
 
