@@ -206,6 +206,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.content-page main > * {
+  padding-block: var(--spacing-mega);
+}
+
 h1,
 h2,
 h3,
@@ -818,7 +822,6 @@ post-hero__content-second a {
 }
 .testimonial-card {
   width: 300px;
-  /* max-width: 90%; */
   padding: var(--spacing-larger);
   border: var(--border-light);
   border-radius: var(--border-radius-small);
